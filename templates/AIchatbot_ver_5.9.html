@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Welcome to AI chatbot</title>
+<link rel="stylesheet" href="static/style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="static/script_bot.js"></script> 
+</head>
+<body >
+	<div class="logo"></div>
+	<div class="chat-box">
+		<div class="chat-closed"> 
+			<img class="chat-logo" alt="chatbox" src="static/wday.png" id="image"/>
+		</div>
+		<div class="chat-header hide">
+			<div><img class="bcone-logo" src="static/giphy.gif" alt="Bristlecone" style="height: 60px; width:60px;"></div>
+			<div><p class="header-p">HR BOT</p>
+				<div><img class="close-header" alt="chatbox" src="static/close-x.png" id="close"/></div>
+			</div>
+		</div>
+		<div class="chat-content hide">
+			<form id="mainscreen" method="post" action="/faqbot">
+			<div id="main">
+				<ol class="discussion">
+				<li  class='other'>
+				<div class='avatar'>
+				<img alt='chatbox' src='static/Logoed.PNG'/>
+				</div>
+				<div class='messages-out'><p>Welcome to Workday.<br><br>How can I help you today?</p>
+				</div>
+				</li>
+				<li id="ref" ></li>
+				</ol>
+			</div>
+			<div>
+				<input type="text/html" value="" placeholder="    Send a message..." class="txtbox" id="input" dir='ltr' rows="1" required="required"  data-min-rows='1'spellcheck="true"/>
+				<button id="runbutton"  class="close-image" type="submit" align="center"> 
+				<img alt="send" src="static/send.png" class="button">
+				</button>
+			</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
